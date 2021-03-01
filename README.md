@@ -1,4 +1,4 @@
-## Deformed Implicit Field: Modeling 3D Shapes with Learned Dense Correspondence##
+## Deformed Implicit Field: Modeling 3D Shapes with Learned Dense Correspondence ##
 
 This is a pytorch implementation of the following paper:
 
