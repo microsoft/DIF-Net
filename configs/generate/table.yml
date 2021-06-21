@@ -1,0 +1,8 @@
+experiment_name: 'table'
+checkpoint_path: 'models/table/checkpoints/model_epoch_0060.pth'
+num_instances: 4000
+latent_dim: 128
+model_type: 'sine'
+hidden_num: 128
+hyper_hidden_layers: 1
+hyper_hidden_features: 256
