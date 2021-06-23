@@ -34,21 +34,16 @@ Our model predicts correspondence uncertainty between shapes in a category, whic
 </p>
 
 ## Installation
-To run the code and models, you need to first set up a conda environment with all dependencies as follows:
+To run the code and models, you need to first download the repository and set up a conda environment with all dependencies as follows:
 ```
+git clone https://github.com/microsoft/DIF-Net.git --recursive
+cd DIF-Net
 conda env create -f environment.yml
 source activate dif
 ```
 
 ## Generating shapes with pre-trained models
-1. Clone the repository:
-
-```
-git clone https://github.com/microsoft/DIF-Net.git
-cd DIF-Net
-```
-
-2. Download the pre-trained models from this [link](https://drive.google.com/file/d/1j74W9KGAYIMDfEkAP50YJGpPKf1whmTz/view?usp=sharing). Unzip all files into ./models subfolder and organize the directory structure as follows:
+1. Download the pre-trained models from this [link](https://drive.google.com/file/d/1j74W9KGAYIMDfEkAP50YJGpPKf1whmTz/view?usp=sharing). Unzip all files into ./models subfolder and organize the directory structure as follows:
 ```
 DIF-Net
 │
@@ -68,7 +63,7 @@ DIF-Net
     ...
 ```
 
-3. Run the following script to generate 3D shapes using a pre-trained model:
+2. Run the following script to generate 3D shapes using a pre-trained model:
 ```
 # generate 3D shapes of certain subjects in certain category
 python generate.py --config=configs/test/<category>.yml --subject_idx=0,1,2
