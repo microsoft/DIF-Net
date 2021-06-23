@@ -209,6 +209,7 @@ dependencies:
     - opencv-python==3.4.9.33
     - opt-einsum==3.2.1
     - proglog==0.1.9
+    - plyfile==0.7.4
     - pytz==2020.1
     - tensorboard==1.15.0
     - tensorflow==1.15.0
