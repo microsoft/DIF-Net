@@ -27,7 +27,7 @@ p.add_argument('--config', required=True, help='Evaluation configuration')
 
 # load configs
 opt = p.parse_args()
-with open(os.path.join(opt.test_configs),'r') as stream:
+with open(os.path.join(opt.config),'r') as stream:
     meta_params = yaml.safe_load(stream)
 
 meta_params['expand'] = 0
