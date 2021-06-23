@@ -121,7 +121,7 @@ By default, we train the network with a batchsize of 256 for 60 epochs on 8 Tesl
 To evaluate the trained models, run the following script:
 ```
 # evaluate dif-net of certain category
-python eval.py --config=configs/eval/<category>.yml
+python evaluate.py --config=configs/eval/<category>.yml
 ```
 The script will first embed test shapes of certain category into DIF-Net latent space, then calculate chamfer distance between embedded shapes and ground truth point clouds. We use [Pytorch3D](https://github.com/facebookresearch/pytorch3d) for chamfer distance calculation. Please follow the instruction of the repository to install it.
 
