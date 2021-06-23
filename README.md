@@ -34,7 +34,7 @@ Our model predicts correspondence uncertainty between shapes in a category, whic
 </p>
 
 ## Installation
-To run the code and models, you need to first download the repository and set up a conda environment with all dependencies as follows:
+Clone the repository and set up a conda environment with all dependencies as follows:
 ```
 git clone https://github.com/microsoft/DIF-Net.git --recursive
 cd DIF-Net
