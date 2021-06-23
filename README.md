@@ -73,7 +73,7 @@ DIF-Net
 2. Run the following script to generate 3D shapes using a pre-trained model:
 ```
 # generate 3D shapes of certain subjects in certain category
-python generate.py --config=configs/test/<category>.yml --subject_idx=0,1,2
+python generate.py --config=configs/generate/<category>.yml --subject_idx=0,1,2
 ```
 The script should generate meshes with color-coded template coordinates (in ply format) into ./recon subfolder. The color of a surface point records the 3D location of its corresponding point in the template space, which indicates dense correspondence information. We recommand using MeshLab to visualize the meshes.
 <p align="center"> 
