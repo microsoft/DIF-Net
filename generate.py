@@ -41,7 +41,7 @@ p.add_argument('--level',type=float ,default=0, help='level of iso-surface for m
 
 # load configs
 opt = p.parse_args()
-with open(os.path.join(opt.test_configs),'r') as stream:
+with open(os.path.join(opt.config),'r') as stream:
     meta_params = yaml.safe_load(stream)
 
 # define DIF-Net
