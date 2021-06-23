@@ -34,13 +34,20 @@ Our model predicts correspondence uncertainty between shapes in a category, whic
 </p>
 
 ## Installation
-Clone the repository and set up a conda environment with all dependencies as follows:
+1. Clone the repository and set up a conda environment with all dependencies as follows:
 ```
 git clone https://github.com/microsoft/DIF-Net.git --recursive
 cd DIF-Net
 conda env create -f environment.yml
 source activate dif
 ```
+
+2. Install [torchmeta](https://github.com/tristandeleu/pytorch-meta) as follows:
+```
+cd pytorch-meta
+python setup.py install
+```
+**Comment out [line 3 in pytorch-meta/torchmeta/datasets/utils.py](https://github.com/tristandeleu/pytorch-meta/blob/794bf82348fbdc2b68b04f5de89c38017d54ba59/torchmeta/datasets/utils.py#L3), otherwise the library cannot be imported correctly.**
 
 ## Generating shapes with pre-trained models
 1. Download the pre-trained models from this [link](https://drive.google.com/file/d/1j74W9KGAYIMDfEkAP50YJGpPKf1whmTz/view?usp=sharing). Unzip all files into ./models subfolder and organize the directory structure as follows:
