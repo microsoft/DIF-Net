@@ -19,7 +19,7 @@ import configargparse
 from torch import nn
 from dif_net import DeformedImplicitField
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '4,5'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3,4,5,6,7'
 
 p = configargparse.ArgumentParser()
 p.add_argument('--config', type=str,default='', help='training configuration.')
@@ -30,7 +30,7 @@ p.add_argument('--experiment_name', type=str, default='default',
                help='Name of subdirectory in logging_root where summaries and checkpoints will be saved.')
 
 # General training options
-p.add_argument('--batch_size', type=int, default=32, help='training batch size.')
+p.add_argument('--batch_size', type=int, default=256, help='training batch size.')
 p.add_argument('--lr', type=float, default=1e-4, help='learning rate. default=1e-4')
 p.add_argument('--epochs', type=int, default=500, help='Number of epochs to train for.')
 
@@ -57,10 +57,10 @@ p.add_argument('--on_surface_points', type=int,default=4000, help='number of sur
 
 # load configs if exist
 opt = p.parse_args()
-if opt.train_configs == '':
+if opt.config == '':
      meta_params = vars(opt)
 else:
-     with open(opt.train_configs,'r') as stream:
+     with open(opt.config,'r') as stream:
           meta_params = yaml.safe_load(stream)
 
 # define dataloader
