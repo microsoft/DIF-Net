@@ -42,7 +42,7 @@ conda env create -f environment.yml
 source activate dif
 ```
 
-2. Install [torchmeta](https://github.com/tristandeleu/pytorch-meta). **Before installation, comment out [line 3 in pytorch-meta/torchmeta/datasets/utils.py](https://github.com/tristandeleu/pytorch-meta/blob/794bf82348fbdc2b68b04f5de89c38017d54ba59/torchmeta/datasets/utils.py#L3), otherwise the library cannot be imported correctly.**
+2. Install [torchmeta](https://github.com/tristandeleu/pytorch-meta). **Before installation, comment out [line 3 in pytorch-meta/torchmeta/datasets/utils.py](https://github.com/tristandeleu/pytorch-meta/blob/794bf82348fbdc2b68b04f5de89c38017d54ba59/torchmeta/datasets/utils.py#L3), otherwise the library cannot be imported correctly.** Then, run the following script:
 ```
 cd pytorch-meta
 python setup.py install
