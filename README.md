@@ -82,7 +82,7 @@ The script should generate meshes with color-coded template coordinates (in ply 
 
 ## Training a model from scratch
 ### Data preparation
-We provide our pre-processed evaluation data from [ShapeNet-v2](https://shapenet.org/)as an example. Data can be download from this [link](https://drive.google.com/drive/folders/1VLENTGWV4VMLM1Z_9O1cAF8k9jHoB9cQ?usp=sharing) (four categories, and 100 shapes for each category respectively. 7 GB in total). The data contains surface points along with normals, and randomly sampled free space points with their SDF values. The data should be organized as the following structure:
+We provide our pre-processed evaluation data from [ShapeNet-v2](https://shapenet.org/) as an example. Data can be download from this [link](https://drive.google.com/drive/folders/1VLENTGWV4VMLM1Z_9O1cAF8k9jHoB9cQ?usp=sharing) (four categories, and 100 shapes for each category respectively. 7 GB in total). The data contains surface points along with normals, and randomly sampled free space points with their SDF values. The data should be organized as the following structure:
 ```
 DIF-Net
 │
