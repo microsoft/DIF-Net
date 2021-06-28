@@ -109,7 +109,7 @@ DIF-Net
     |       └─── *.mat    
     ...
 ```
-To generate the whole training set, we use [mesh_to_sdf](https://github.com/marian42/mesh_to_sdf) provided by [marian42](https://github.com/marian42) to extract surface points and normals, as well as calculate SDF values for ShapeNet meshes. Please follow the instruction of the repository to install it.
+To generate the whole training set, we follow [mesh_to_sdf](https://github.com/marian42/mesh_to_sdf) provided by [marian42](https://github.com/marian42) to extract surface points and normals, as well as calculate SDF values for ShapeNet meshes. Please follow the instruction of the repository to install it.
 ### Training networks
 Run the following script to train a network from scratch using the pre-processed data:
 ```
