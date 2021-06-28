@@ -82,7 +82,7 @@ The script should generate meshes with color-coded template coordinates (in ply 
 
 ## Training a model from scratch
 ### Data preparation
-Pre-processed data from [ShapeNet-v2](https://shapenet.org/) can be download from this [link]() (410 GB in total for four categories). The data contains surface points along with normals, and randomly sampled free space points with their SDF values. The data should be organized as the following structure:
+We provide pre-processed evaluation data from [ShapeNet-v2](https://shapenet.org/). Data can be download from this [link](https://drive.google.com/drive/folders/1VLENTGWV4VMLM1Z_9O1cAF8k9jHoB9cQ?usp=sharing) (four categories, and 100 shapes for each category respectively. 7 GB in total). The data contains surface points along with normals, and randomly sampled free space points with their SDF values. The data should be organized as the following structure:
 ```
 DIF-Net
 │
@@ -109,7 +109,7 @@ DIF-Net
     |       └─── *.mat    
     ...
 ```
-Alternatively, you can pre-process the data by yourself. We use [mesh_to_sdf](https://github.com/marian42/mesh_to_sdf) provided by [marian42](https://github.com/marian42) to extract surface points as well as calculate SDF values for ShapeNet meshes. Please follow the instruction of the repository to install it.
+To generate the whole training set, we use [mesh_to_sdf](https://github.com/marian42/mesh_to_sdf) provided by [marian42](https://github.com/marian42) to extract surface points and normals, as well as calculate SDF values for ShapeNet meshes. Please follow the instruction of the repository to install it.
 ### Training networks
 Run the following script to train a network from scratch using the pre-processed data:
 ```
