@@ -50,7 +50,7 @@ python setup.py install
 
 
 ## Generating shapes with pre-trained models
-1. Download the pre-trained models from this [link](https://drive.google.com/file/d/1j74W9KGAYIMDfEkAP50YJGpPKf1whmTz/view?usp=sharing). Unzip all files into ./models subfolder and organize the directory structure as follows:
+1. Download the pre-trained models from this [link](https://drive.google.com/drive/folders/1xjHxCE2AH6uvx5K3ycBsF3Z1I8fBPYkP?usp=sharing). Unzip all files into ./models subfolder and organize the directory structure as follows:
 ```
 DIF-Net
 │
